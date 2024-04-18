@@ -7,7 +7,7 @@ import './index.css'
 class EvenOddApp extends Component {
   state = {count: 0}
 
-  getRandomNumber = () => Math.ceil(Math.random() * 100)//it used to generate random numbers up to 100
+  getRandomNumber = () => Math.ceil(Math.random() * 100) //it used to generate random numbers up to 100
 
   onIncrement = () => {
     const randomNumber = this.getRandomNumber()
@@ -17,7 +17,7 @@ class EvenOddApp extends Component {
 
   render() {
     const {count} = this.state
-    const displayText = count % 2 === 0 ? 'Even' : 'Odd'//used to verify even or odd
+    const displayText = count % 2 === 0 ? 'Even' : 'Odd' //used to verify even or odd
 
     return (
       <div className="app-container">
